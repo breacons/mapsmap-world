@@ -1,0 +1,14 @@
+{
+  "presets": [
+    "babel-preset-react-app"
+  ],
+  "plugins": [
+  ],
+  "env": {
+    "production": {
+      "plugins": []
+    },
+    "development": {},
+    "test": {}
+  }
+}

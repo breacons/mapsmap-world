@@ -1,0 +1,46 @@
+.commentBox {
+  height: 100px;
+  font-size: 14px;
+}
+
+.writingContainer {
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  bottom: 0px;
+  //background-color: white;
+  z-index: 10;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+
+  & :global(.ant-form-item) {
+    width: 240px !important;
+  }
+
+  & .formButtons {
+    flex-direction: column;
+    display: flex;
+    margin-left: 8px;
+    justify-content: flex-end;
+    padding-bottom: 24px;
+
+    & button {
+      margin-top: 4px;
+    }
+  }
+
+  & :global(.ant-row.ant-form-item) {
+    flex-grow: 1;
+  }
+}
+
+.writingMeta {
+  margin-bottom: 8px;
+}
+
+.fieldContainer {
+  flex-grow: 1;
+}

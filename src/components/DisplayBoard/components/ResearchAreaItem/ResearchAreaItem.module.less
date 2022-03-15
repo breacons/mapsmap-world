@@ -1,0 +1,70 @@
+@import '../../../../styles/variables';
+
+.researchAreaItem {
+  min-width: @column-width;
+  //width: @column-width;
+  height: 30px;
+  line-height: 30px;
+  //background-color: brown;
+  margin-right: @default-margin;
+
+  //border-radius: 5px;
+  padding-left: 16px;
+  border-left: solid 3px @color-pink;
+  overflow: hidden;
+
+  &.isDragging {
+    background-color: pink;
+  }
+
+  & input {
+    color: black !important;
+  }
+}
+
+.title {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  color: white !important;
+}
+
+.addButton {
+  width: @add-width;
+  border: 0 gray solid;
+  border-left: 3px dashed @color-pink;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0.2;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+
+  &:hover {
+    opacity: 1;
+    transition: opacity 150ms ease-in-out;
+  }
+}
+
+.spacing {
+  flex-shrink: 0;
+  //height: @row-height;
+  display: flex;
+  //background-color: red;
+  opacity: 0.5;
+  //pointer-events: none
+}
+
+.topContainer {
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  //overflow-y: hidden;
+  //overflow-x: visible;
+}

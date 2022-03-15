@@ -1,0 +1,62 @@
+@import '../../../../styles/variables';
+
+.title {
+  margin-bottom: @default-margin;
+  color: white !important;
+}
+
+.titleLevel {
+  font-weight: bolder;
+}
+
+.levelWithRow {
+}
+
+.levelContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.topicContainer {
+  display: flex;
+  flex-direction: row;
+  margin-left: @default-margin;
+}
+
+.titleContainer {
+  padding: 8px 8px;
+  border-bottom: 2px solid #717171;
+  margin-bottom: 16px;
+}
+
+.topicsArea {
+  &:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.03);
+  }
+}
+
+.emptyLevel {
+  display: flex;
+  flex-direction: column;
+  margin-right: @default-margin;
+  background-color: gray;
+  width: @column-width;
+  overflow: hidden;
+}
+.addButtonSpace {
+  width: @add-width;
+  margin-right: @default-margin;
+}
+
+.levelRow {
+  //border-bottom: 1px solid #474758;
+}
+
+.emptyArea {
+  width: @column-width;
+}

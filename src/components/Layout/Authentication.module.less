@@ -1,0 +1,79 @@
+@import '~antd/lib/style/themes/default';
+
+.layout {
+  //max-width: 400px;
+  //height: 100%;
+
+  //margin: 0 auto;
+  //background-color: #fff;
+  //padding: 24px;
+
+  @media (min-width: @screen-sm) {
+    height: 100vh;
+  }
+}
+.row {
+  height: 100%;
+}
+
+.imageContainer {
+  height: 100%;
+
+  @media (max-width: @screen-sm) {
+    //max-height: 275px;
+    margin-bottom: 24px;
+  }
+}
+.imageRow {
+  min-height: 100%;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  background-position: center;
+  max-width: 546px;
+  max-height: 546px;
+  @media (max-width: @screen-sm) {
+    max-height: 100%;
+  }
+}
+
+.contentContainer {
+}
+
+.content {
+  width: 100%;
+  margin: auto;
+
+  @media (min-width: @screen-sm) {
+    max-width: 360px;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.header {
+  padding: 24px;
+  width: 100%;
+  height: 88px;
+  flex: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signInButton {
+  padding: 8px 12px;
+}
+
+.logo {
+  cursor: pointer;
+}

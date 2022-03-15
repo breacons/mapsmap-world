@@ -1,0 +1,27 @@
+@import '../../../../styles/variables';
+
+.container {
+  //position: fixed;
+  //z-index: 100;
+  display: flex;
+  align-items: start;
+  //overflow: auto
+  background-color: @color-gray;
+  flex-shrink: 0;
+  overflow: visible;
+  width: min-content;
+  padding: 12px 0px 12px @default-margin;
+
+  &.isDraggingOver {
+    background-color: rgba(130, 190, 228, 0.8);
+  }
+}
+.topContainer {
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  top: 64px;
+  z-index: 1000;
+  //overflow-y: hidden;
+  //overflow-x: visible;
+}

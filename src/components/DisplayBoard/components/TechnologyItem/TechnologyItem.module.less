@@ -1,0 +1,23 @@
+@import '../../../../styles/variables';
+
+.technologyItem {
+  user-select: none;
+  //height: @row-height;
+  height: 70px;
+  width: @column-width !important;
+  margin-right: @default-margin;
+  display: flex;
+
+  margin-bottom: @default-margin;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: white;
+  color: black;
+  border-top: solid 3px @color-light-blue;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &.isDragging {
+    background-color: cyan;
+  }
+}

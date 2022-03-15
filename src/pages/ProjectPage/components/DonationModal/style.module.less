@@ -1,0 +1,63 @@
+@import '../../../../styles/variables';
+
+.tabs {
+  margin-top: -24px;
+  overflow: visible;
+
+  & .ant-tabs {
+    overflow: visible;
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+}
+
+.cardInputs {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.amount {
+  margin-top: 34px;
+  &:global.ant-input {
+    width: 320px;
+    font-size: 72px;
+    height: 88px;
+    font-weight: 800;
+    border: none;
+    border-width: 0px;
+    border-radius: 0 !important;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    padding-bottom: 4px !important;
+    border-bottom: 2px solid white;
+    -webkit-appearance: none;
+    text-align: center;
+  }
+
+  & input::-webkit-outer-spin-button,
+  & input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &:focus {
+    border-bottom: 2px solid white;
+  }
+}
+
+.prefix {
+  font-size: 72px !important;
+  font-weight: 800 !important;
+}
+
+.confirm {
+  margin-top: 34px;
+  width: 320px;
+}
+
+.spinner {
+  align-items: center;
+  display: flex !important;
+  justify-content: center;
+}

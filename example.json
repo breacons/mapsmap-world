@@ -1,0 +1,48 @@
+{
+  "id": "Uakgb_J5m9g-0JDMbcJqLJ",
+  "title": "Test Board",
+  "researchAreas": {
+    "uytre": {
+      "id": "uytre",
+      "title": "First Area",
+      "order": 1
+    }
+  },
+  "technologies": {
+    "hgur8i": {
+      "id": "hgur8i",
+      "title": "First Technology",
+      "order": 1,
+      "areaId": "uytre"
+    },
+    "drtyh": {
+      "id": "drtyh",
+      "title": "Second Technology",
+      "order": 12,
+      "areaId": "uytre"
+    }
+  },
+  "topics": {
+    "bghfurei": {
+      "id": "bghfurei",
+      "title": "First Topic",
+      "order": 1,
+      "technologyId": "hgur8i",
+      "levelId": "w34rfd"
+    },
+    "987ytfg": {
+      "id": "987ytfg",
+      "title": "Second Topic",
+      "order": 2,
+      "technologyId": "hgur8i",
+      "levelId": "w34rfd"
+    }
+  },
+  "levels": {
+    "w34rfd": {
+      "id": "w34rfd",
+      "title": "First Level",
+      "order": 1
+    }
+  }
+}

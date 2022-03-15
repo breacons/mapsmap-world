@@ -1,0 +1,30 @@
+.addButton {
+  margin-bottom: 12px;
+}
+
+.disabledSave {
+  color: @disabled-color;
+  cursor: default;
+
+  &:hover {
+    color: @disabled-color;
+  }
+}
+
+.rowButton {
+  padding: 0;
+}
+
+.table {
+  :global {
+    & .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+
+  & .editing {
+    vertical-align: top;
+  }
+
+  margin-bottom: 24px;
+}

@@ -1,0 +1,45 @@
+@import '../../styles/variables';
+
+.container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: calc(~'100vh - 64px');
+  flex-direction: column;
+
+  //background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+  background-color: @color-dark-blue;
+  //background-image: url('./images/space-select-bg.svg');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+}
+
+.inner {
+  padding: 24px;
+  //border: solid 1px #d6d6d6;
+  border-radius: 26px;
+  width: 440px;
+  box-shadow: #8181815e 0px 0px 15px 0px;
+  background-color: white;
+  color: @color-gray !important;
+
+  & :global(.ant-menu) {
+    border-right: none;
+  }
+}
+
+.text {
+  color: @color-gray !important;
+  font-weight: 300 !important;
+}
+
+.button {
+  color: @color-gray !important;
+  font-weight: 500 !important;
+}
+
+.divider {
+  border-top: 1px solid @color-gray;
+}

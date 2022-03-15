@@ -1,0 +1,53 @@
+@import '../../../../styles/variables';
+
+.technologiesForResearchAreaContainer {
+  display: flex;
+  align-items: start;
+  flex-shrink: 0;
+  overflow: auto;
+  flex-direction: row;
+  background-color: @color-gray;
+  min-width: @column-width + 2 * @default-margin + @add-width;
+  padding: 12px 0px 12px @default-margin;
+  &.isDraggingOver {
+    background-color: rgba(130, 190, 228, 0.8);
+  }
+}
+.addButton {
+  width: @add-width;
+  border: 0 gray solid;
+  border-left: 3px dashed @color-light-blue;
+  height: calc(@row-height - 10px);
+  text-align: center;
+  cursor: pointer;
+  opacity: 0.2;
+  flex-shrink: 0;
+  margin-right: @default-margin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+
+  &:hover {
+    opacity: 1;
+    transition: opacity 150ms ease-in-out;
+  }
+}
+
+.unscheduledTechnologyContainer {
+  display: flex;
+  align-items: start;
+  flex-shrink: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  top: 118px;
+  z-index: 1000;
+  //overflow-y: hidden;
+  //overflow-x: visible;
+}

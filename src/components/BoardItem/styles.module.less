@@ -1,0 +1,40 @@
+@import '../../styles/variables';
+
+@soft-gray-color: #e7e7e7;
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerLeft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.boardName {
+  cursor: pointer;
+  margin-left: 12px;
+  font-weight: 800;
+  color: @color-dark-blue !important;
+
+  & :global(a) {
+    color: @color-dark-blue !important;
+  }
+}
+
+.boardLogo {
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  border: solid 1px @soft-gray-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 10px;
+}

@@ -1,0 +1,51 @@
+@import '../../../../styles/variables';
+.topicsArea {
+  display: flex;
+  flex-direction: column;
+  margin-right: @default-margin;
+  //padding-left: @default-margin;
+  //background-color: lightseagreen;
+  width: @column-width;
+  overflow: hidden;
+  //border-radius: 5px;
+  &.isDraggingOver {
+    background-color: rgba(130, 190, 228, 0.3);
+  }
+}
+
+.newTopic {
+  //height: @row-height;
+  //width: @column-width;
+  //margin-bottom: @default-margin;
+  //opacity: 0;
+  //border-top: 3px @color-pink dashed;
+  //transition: all 100ms ease-in-out;
+  cursor: pointer;
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+  //font-weight: 700;
+  //font-size: 18px;
+  //color: white;
+
+  display: flex;
+  height: @row-height;
+  width: @column-width;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  border-top: solid 3px @color-red;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
+
+  &:hover {
+    opacity: 1;
+    transition: opacity 150ms ease-in-out;
+  }
+  &.isDragging {
+    opacity: 0 !important;
+  }
+}

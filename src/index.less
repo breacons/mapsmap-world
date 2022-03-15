@@ -1,0 +1,95 @@
+@import '~antd/dist/antd.css';
+//@import '~react-flow-renderer/dist/style.css';
+//@import '~react-flow-renderer/dist/theme-default.css';
+
+@import 'react-loading-skeleton/dist/skeleton.css';
+@import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
+@import 'react-credit-cards/es/styles-compiled.css';
+@import './styles/variables';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: @color-dark-blue !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.ant-input {
+  width: auto;
+}
+
+#card-number {
+  color: black !important;
+}
+
+.rdw-dropdownoption-default,
+.rdw-suggestion-option {
+  color: black;
+  border-radius: 4px;
+}
+
+.rdw-suggestion-dropdown {
+  min-width: 220px;
+  border-radius: 4px;
+}
+
+.ant-card {
+  border-radius: 10px !important;
+  overflow: hidden;
+}
+
+.ant-modal-content,
+.ant-modal-header,
+.ant-modal-body {
+  background-color: @color-dark-blue !important;
+}
+
+.ant-modal-content {
+  border-radius: 16px !important;
+  overflow: hidden;
+}
+
+.ant-btn:not(.ant-btn-circle),
+.ant-tag {
+  border-radius: 6px !important;
+}
+
+input.ant-input,
+.ant-select-selector,
+.ant-input-affix-wrapper,
+.ant-picker,
+textarea.ant-input {
+  border-radius: 10px !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+
+  //&:focus {
+  //  border-color: @primary-color;
+  //}
+}
+
+.ant-input-number-group-addon {
+  border-radius: 10px 0px 0px 10px;
+}
+
+.ant-input-number {
+  border-radius: 0px 10px 10px 0px !important;
+}
+
+.ant-input-number-handler-wrap {
+  display: none;
+}
+
+.ant-dropdown-menu {
+  border-radius: 6px !important;
+}
+
+.rdw-dropdown-selectedtext {
+  color: @color-gray !important;
+}
